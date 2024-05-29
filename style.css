@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.menu {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between; 
+    align-items: center;
+    background: #000;
+    z-index: 1000;
+}
+
+.menu-nav {
+    display: flex;
+    margin-left:30px ;
+}
+.nav-item {
+    margin-left:30px ;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    transition: 0.2s ease-in;
+}
+.nav-item:hover {
+    transform: scale(1.1);
+}
+.logo{
+    transition: 0.2s ease-in;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    padding-top: 70px;
+}
+
+.header-left {
+    width: 50%;
+    order: 2;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header-right {
+    width: 50%;
+    order: 1;
+    height: 100%;
+    background: url('img/header-bg.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+.header-left-img {
+    width: 50%;
+    flex-grow: 1;
+    filter: saturate(0);
+}
+.header-pic1 {
+    background: url('img/header-left-1.jpg') center/cover no-repeat;
+}
+.header-pic2 {
+    background: url('img/header-left-2.jpg') center/cover no-repeat;
+}
+.header-pic3 {
+    background: url('img/header-left-3.jpg') center/cover no-repeat;
+}
+
+.header-title {
+    font-size: 120px;
+    color: white;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+}
+.header-text {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    text-align: right;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.about {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #AA4344;
+    padding: 70px 50px;
+}
+
+
+.about-left {
+   flex-basis: 500px;
+   flex-wrap: wrap;
+   flex-grow: 2;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-content: space-between;
+}
+.about-right {
+    flex-basis: 500px;
+    flex-grow: 1;
+    height: 100%;
+    padding: 50px;
+}
+.about-header-logo{
+    width: 20%;
+}
+.about-title {
+    font-size: 80px;
+    font-weight: 900;
+    color: white;
+    width: 60%;
+    text-align: right;
+}
+.about-text {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 30px;
+    background: #783D3D;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-right-img{
+    width: 100%;
+}
+
+.advantages {
+    padding: 70px 50px;
+    min-height: 100vh;
+    height: fit-content;
+}
+.advantages-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.advantages-title-icon {
+    width: 10%;
+}
+.advantages-title-text {
+    font-size: 80px;
+    font-weight: 900;
+    width: 60%;
+}
+.advantages-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.advantages-card {
+    display: flex;
+    justify-content: space-between;
+    background: #783D3D;
+    margin: 30px;
+    height: 200px;
+    padding: 30px;
+    width: 30%;
+    flex-basis: 600px;
+}
+
+.adv-card-number {
+    font-size: 70px;
+    font-weight: 900;
+    color:#C17272;
+
+}
+.adv-card-text {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    align-self: flex-end;
+
+}
+
+.card-1 {
+    flex-grow: 1;
+    order:1;
+}
+
+.card-2 {
+    flex-grow: 4;
+    order:2;
+}
+
+.card-3 {
+    flex-grow: 4;
+    order:3;
+}
+
+.card-4 {
+    flex-grow: 1;
+    order:4;
+}
+
+
+.company-info {
+    display: flex;
+    height: 100vh;
+}
+.company-info-part {
+  
+    position: relative;
+    overflow: hidden;
+}
+.company-info-title {
+    font-size: 80px;
+    color: white;
+    font-size: 900;
+    word-wrap: break-word;
+    margin: 70px 0;
+}
+.company-info-text {
+    font-size: 50px;
+    color: white;
+    font-size: 700;
+}
+.company-info-text li{
+    margin: 30px 0;
+}
+
+.part1, .part3  {
+    background: url('img/test.PNG') center/cover no-repeat;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+
+.part2 {
+    padding: 30px;
+    flex-basis: 800px;
+    flex-shrink: 1;
+    flex-grow: 5;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+@media(max-width:1200px){
+    .header{
+        flex-direction: column
+    }
+    .header-left, .header-right{
+        width: 100%;
+    }
+    .about{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .header-title{
+        font-size: 80px;
+    }
+    .header-text{
+        font-size: 50px;
+    }
+    .about-title{
+        font-size: 40px;
+    }
+    .about-text{
+        font-size: 20px;
+    }
+    .advantages-title-text{
+        font-size: 40px;
+    }
+    .advantages-text{
+        font-size: 20px;
+    }
+    .company-info-title {
+        font-size: 40px;
+       
+    }
+    .company-info-text {
+        font-size: 20px;
+    }
+}
+@media(max-width:600px){
+    .about, .advantages{
+        padding: 70px 15px;
+    }
+   
+    .menu{
+        padding: 0 15px;
+    }
+    .nav-item{
+        font-size:  10px;
+        margin-left: 10px;
+    }
+    .logo{
+        width: 35px;
+    }
+    .header-left{
+        display: none;
+    }
+    .header-right{
+        width: 100%;
+    }
+    .header-title{
+        font-size: 60px;
+    }
+    .header-text{
+        font-size: 30px;
+    }
+    .about-title{
+        font-size: 30px;
+    }
+    .about-text{
+        font-size: 16px;
+    }
+    .advantages-title-text{
+        font-size: 30px;
+        text-align: left;
+        width: 80%;
+    }
+    .advantages-text{
+        font-size: 16px;
+    }
+    .adv-card-text{
+        font-size: 20px;
+    }
+    .adv-card-number{
+        font-size: 20px;
+    }
+    .company-info-title {
+        font-size: 30px;
+       
+    }
+    .company-info-text {
+        font-size: 16px;
+    }
+}
